@@ -3,7 +3,7 @@
 const Register = () => {
     return (
         <div>
-            <p>Hi! I am Register </p>
+            <p className="font-nanum font-bold">Hi! I am Register </p>
         </div>
     );
 };

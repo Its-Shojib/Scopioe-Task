@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        nanum: ["Nanum Myeongjo", "serif"]
+      },
+    },
   },
-  plugins: [],
+  plugins: [require('daisyui'),],
 }
