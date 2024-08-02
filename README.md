@@ -45,8 +45,7 @@ To get a local copy up and running, follow these steps:
 
 ## Usage
 To start the project, run the following command:
-
-    ```bash
-    npm run dev
-    ```
+```shell
+npm run dev
+```
 This will run the app in the development mode and open http://localhost:5173 to view it in the browser.
