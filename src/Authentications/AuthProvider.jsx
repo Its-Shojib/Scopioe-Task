@@ -32,6 +32,7 @@ const AuthProvider = ({ children }) => {
     useEffect(() => {
         let unSubscribe = onAuthStateChanged(auth, currentUser => {
             setUser(currentUser);
+            setLoading(false);
             console.log('observing: ', currentUser);
             if (currentUser) {
                 localStorage.setItem('user', currentUser);

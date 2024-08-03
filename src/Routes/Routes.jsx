@@ -4,6 +4,7 @@ import Error from "../Pages/Error/Error";
 import Login from "../Pages/Login/Login";
 import Home from "../Pages/Home/Home";
 import Layout from "../Layout/Layout";
+import PrivateRoutes from "./PrivateRoutes";
 
 const router = createBrowserRouter([
     {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/home",
-                element: <Home></Home>
+                element: <PrivateRoutes><Home></Home></PrivateRoutes>
             },
         ],
     },
