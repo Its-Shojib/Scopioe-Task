@@ -3,8 +3,11 @@ import img from '../../assets/Login-Register.png'
 import useAuth from '../../Hooks/useAuth';
 import { useForm } from 'react-hook-form';
 import { Link, useNavigate } from 'react-router-dom';
-import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import { FaEye, FaEyeSlash, FaFacebook } from 'react-icons/fa';
 import Swal from 'sweetalert2';
+import google from '../../../public/google.png';
+import facebook from '../../../public/facebook.png';
+import { FcGoogle } from "react-icons/fc";
 
 const Register = () => {
     let [showPassword, setShowPassword] = useState(false);
@@ -62,8 +65,16 @@ const Register = () => {
                             <p className='text-sm'>Welcome Back! Select a method to log in:</p>
                         </div>
                         <div className='flex gap-10 justify-center items-center'>
-                            <div className='cursor-pointer' onClick={handleGoogleLogin}>Google</div>
-                            <div className='cursor-pointer'>Facebook</div>
+                            <div className='cursor-pointer flex justify-center items-center gap-1 bg-gradient-to-r from-gray-300 to-white text-black p-2 shadow-lg w-28' onClick={handleGoogleLogin}>
+                            <FcGoogle
+                                className='w-6 h-6' />
+                                <p>Google</p>
+                            </div>
+                            <div className='cursor-pointer flex justify-center items-center gap-1 bg-blue-500 rounded-md text-white p-2 shadow-lg w-28'>
+                                <FaFacebook
+                                className='w-6 h-6' />
+                                <p>Facebook</p>
+                            </div>
                         </div>
                         <p className='flex justify-center items-center text-center my-3 text-sm'>
                             Or Continue with Email
