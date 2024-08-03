@@ -5,8 +5,6 @@ import { useForm } from 'react-hook-form';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaEye, FaEyeSlash, FaFacebook } from 'react-icons/fa';
 import Swal from 'sweetalert2';
-import google from '../../../public/google.png';
-import facebook from '../../../public/facebook.png';
 import { FcGoogle } from "react-icons/fc";
 
 const Register = () => {
