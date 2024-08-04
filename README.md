@@ -98,6 +98,6 @@ Contributions are welcome! Please follow these steps:
 
 For any questions or suggestions, please open an issue or contact me directly at 
 - Md Shojib Hossain
-[mdshojib922@gmail.com].
+- [mdshojib922@gmail.com]
 
 ---
