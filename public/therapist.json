@@ -1,38 +1,62 @@
 [
-  {
-      "name": "Alexander Cort",
-      "picture": "pic1.png",
-      "location": "8801 Elm Avenue, Brooklyn",
-      "occupation": "Mobile & In-Studio"
-  },
-  {
-      "name": "Michael Smith",
-      "picture": "pic2.png",
-      "location": "910 Maple Drive, Miami",
-      "occupation": "Mobile & In-Studio"
-  },
-  {
-      "name": "David Martinez",
-      "picture": "pic3.png",
-      "location": "729 Broadway, Manhattan",
-      "occupation": "Mobile & In-Studio"
-  },
-  {
-      "name": "Jennifer Lee",
-      "picture": "pic4.png",
-      "location": "123 Pine Road, San Francisco",
-      "occupation": "Mobile & In-Studio"
-  },
-  {
-      "name": "Michael Smith",
-      "picture": "pic2.png",
-      "location": "551 Main Street, Los Angeles",
-      "occupation": "Sports Therapy"
-  },
-  {
-      "name": "Emily Davis",
-      "picture": "pic4.png",
-      "location": "701 palm RD, Chicago",
-      "occupation": "Holistic Wellness"
-  }
+    {
+        "name": "Alexander Cort",
+        "address": "123 Elm Street, New York",
+        "service": "Mobile & In-Studio",
+        "image": "https://i.ibb.co/BtzzBND/card-3.png"
+    },
+    {
+        "name": "Michael Smith",
+        "address": "789 Maple Drive, NY",
+        "service": "Mobile & In-Studio",
+        "image": "https://i.ibb.co/gPtZvQ8/card-4.png"
+    },
+    {
+        "name": "David Martinez",
+        "address": "Pine Street, San Fran",
+        "service": "Mobile & In-Studio",
+        "image": "https://i.ibb.co/nf9VKDS/card-6.png"
+    },
+    {
+        "name": "Jennifer Lee",
+        "address": "567 Cedar Lane, Miami",
+        "service": "Mobile & In-Studio",
+        "image": "https://i.ibb.co/SdP0GmB/card-7.png"
+    },
+    {
+        "name": "Michael Smith",
+        "address": "789 Maple Drive, NY",
+        "service": "Mobile & In-Studio",
+        "image": "https://i.ibb.co/gPtZvQ8/card-4.png"
+    },
+    {
+        "name": "David Martinez",
+        "address": "Pine Street, San Fran",
+        "service": "Mobile & In-Studio",
+        "image": "https://i.ibb.co/nf9VKDS/card-6.png"
+    },
+    {
+        "name": "Jennifer Lee",
+        "address": "567 Cedar Lane, Miami",
+        "service": "Mobile & In-Studio",
+        "image": "https://i.ibb.co/SdP0GmB/card-7.png"
+    },
+    {
+        "name": "Michael Smith",
+        "address": "789 Maple Drive, NY",
+        "service": "Mobile & In-Studio",
+        "image": "https://i.ibb.co/gPtZvQ8/card-4.png"
+    },
+    {
+        "name": "David Martinez",
+        "address": "Pine Street, San Fran",
+        "service": "Mobile & In-Studio",
+        "image": "https://i.ibb.co/nf9VKDS/card-6.png"
+    },
+    {
+        "name": "Jennifer Lee",
+        "address": "567 Cedar Lane, Miami",
+        "service": "Mobile & In-Studio",
+        "image": "https://i.ibb.co/SdP0GmB/card-7.png"
+    }
 ]

@@ -1,0 +1,86 @@
+[
+    {
+        "city": "Atlanta",
+        "state": "GA"
+    },
+    {
+        "city": "Indianapolis",
+        "state": "IN"
+    },
+    {
+        "city": "Philadelphia",
+        "state": "PA"
+    },
+    {
+        "city": "Boston",
+        "state": "MA"
+    },
+    {
+        "city": "Jacksonville",
+        "state": "FL"
+    },
+    {
+        "city": "Queens",
+        "state": "NY"
+    },
+    {
+        "city": "Chicago",
+        "state": "IL"
+    },
+    {
+        "city": "Kansas City",
+        "state": "MO"
+    },
+    {
+        "city": "Raleigh",
+        "state": "NC"
+    },
+    {
+        "city": "Chicago",
+        "state": "IL"
+    },
+    {
+        "city": "Los Angeles",
+        "state": "CA"
+    },
+    {
+        "city": "San Antonio",
+        "state": "TX"
+    },
+    {
+        "city": "El Paso",
+        "state": "TX"
+    },
+    {
+        "city": "Miami",
+        "state": "FL"
+    },
+    {
+        "city": "Tucson",
+        "state": "AZ"
+    },
+    {
+        "city": "Fresno",
+        "state": "CA"
+    },
+    {
+        "city": "Nashville",
+        "state": "TN"
+    },
+    {
+        "city": "Upland",
+        "state": "CA"
+    },
+    {
+        "city": "Houston",
+        "state": "TX"
+    },
+    {
+        "city": "Oklahoma City",
+        "state": "OK"
+    },
+    {
+        "city": "Washington",
+        "state": "D.C."
+    }
+]
