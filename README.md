@@ -1,79 +1,103 @@
-# Scopioe Live Link: https://scopioe-c9f29.web.app
+# Project Name
 
-## Overview
+The project main focus was your thinking level of creating dynamic design some parts was hard for but did my best.
 
-This project is a fully functional React.js application that converts a Figma design into a responsive web application. It includes login functionality using Firebase, dynamic data display with search functionality, and is styled using Tailwind CSS. The application uses `react-router-dom` for navigation and ensures proper route protection for authenticated routes.
 
-## Key Features
+## Live Link
 
-- **Figma to React.js Conversion**: Convert the provided Figma design into a React.js application that is responsive and visually consistent.
-- **Login Functionality**: Implement a login page using Firebase for authentication and user session management. Redirect users to a protected route upon successful login.
-- **React Router Setup**: Manage application navigation using `react-router-dom` with routes for login, main content, and other required pages. Ensure proper route protection.
-- **Dynamic Data Display**: Fetch and display dynamic data with search functionality. Display the data in a user-friendly format consistent with the Figma design.
-- **Styling with Tailwind CSS**: Style the application components using Tailwind CSS to match the Figma design and ensure responsiveness.
+[Live Demo](https://scopioe-task-business.netlify.app)
+## Features
 
-## Technology Used
+- User Authentication with Firebase
+- Secured Firebase secret using `.env.local`
+- Static JSON data hosted on GitHub
+- React-based front-end
 
-1. **Figma to React.js Implementation**:
+## Prerequisites
 
-   - **Description**: Transform the provided Figma design into a fully responsive and visually consistent React.js application.
-   - **Technologies Used**: React.js for building the user interface, Tailwind CSS for styling, and Figma as the design source.
+- Node.js (version 18.0.0 or higher)
+- npm (version  18.0.0 or higher) or yarn (version 18.0.0 or higher)
 
-2. **Authentication Functionality**:
+## Getting Started
 
-   - **Description**: Develop a login page leveraging Firebase for authentication and user session management. Ensure users are redirected to a protected route upon successful login.
-   - **Technologies Used**: Firebase for authentication, React Router for navigation and route protection, and React Hot Toast for user feedback.
+### Clone the repository
 
-3. **Routing Configuration**:
+```bash
+git clone https://github.com/Its-Shojib/Scopioe-Task.git
+cd Scopioe-Task
+```
 
-   - **Description**: Utilize `react-router-dom` to manage the application's navigation, including routes for the login page, main content pages, and any additional required pages. Guarantee proper route protection for authenticated routes.
-   - **Technologies Used**: React Router for managing routes and navigation, ensuring a seamless user experience across different sections of the application.
+### Install Dependencies
 
-4. **Dynamic Data Rendering**:
+Using npm:
 
-   - **Description**: Create a component that retrieves and displays dynamic data, with search functionality, in a user-friendly format that aligns with the Figma design.
-   - **Technologies Used**: React.js for building dynamic components, simulated data sources (e.g., static JSON or mock APIs) for data retrieval, and Tailwind CSS for styling the data display.
+```bash
+npm install
+```
 
-5. **Tailwind CSS Styling**:
-   - **Description**: Apply Tailwind CSS to style the application components, ensuring consistency with the Figma design and responsiveness across different devices.
-   - **Technologies Used**: Tailwind CSS for styling and ensuring the application is visually appealing and responsive.
 
-## Installation Guide
+### Setup Firebase Configuration
 
-1. **Clone the repository**:
+Create a `.env.local` file in the root directory of your project and add your Firebase configuration details:
 
-   ```bash
-   git clone https://github.com/rabby9898/scopioe-frontend.git
-   cd scopioe-frontend
-   ```
+```plaintext
+  VITE_apiKey=your_api_key
+  VITE_authDomain=
+  VITE_projectId=your_project_id
+  VITE_storageBucket=your_project_id.appspot.com
+  VITE_messagingSenderId=your_messaging_sender_id
+  VITE_appId=your_project_id.firebaseapp.com
+```
 
-2. **Install dependencies**:
+### Run the Application
 
-   ```bash
-   npm install
-   ```
+Using npm:
 
-3. **Run the application**:
+```bash
+npm run dev
+```
 
-   ```bash
-   npm run dev
-   ```
-
-4. **Access the application**:
-   - Open your browser and go to `http://localhost:5173`.
+Your application should now be running on `http://localhost:5173`.
 
 ## Project Structure
 
-- **public/**: Contains the public assets.
-- **src/**: Contains the source code.
-  - **components/**: Reusable components used throughout the application.
-  - **pages/**: Page components for different routes.
-  - **styles/**: Tailwind CSS and other style files.
-  - **main.jsx**: Entry point of the application.
+A brief description of the project structure.
+
+```
+├── public
+│   ├── index.html
+│   └── ...
+├── src
+│   ├── components
+│   │   ├── Auth.js
+│   │   ├── ...
+│   ├── App.js
+│   ├── index.js
+│   ├── ...
+├── .env.local
+├── package.json
+└── ...
+```
+
+## Usage
+
+Instructions on how to use the project.
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature-branch`)
+3. Commit your changes (`git commit -am 'Add new feature'`)
+4. Push to the branch (`git push origin feature-branch`)
+5. Create a new Pull Request
+
 
 ## Contact
 
-For any questions or support, please contact:
+For any questions or suggestions, please open an issue or contact me directly at 
+- Md Shojib Hossain
+[mdshojib922@gmail.com].
 
-- **Md Fajle Rabby**
-- **Email**: mdfajlerabby00@gmail.com
+---
