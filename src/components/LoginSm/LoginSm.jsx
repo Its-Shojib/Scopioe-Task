@@ -106,6 +106,7 @@ const LoginSm = () => {
                 </label>
                 <input
                   type="email"
+                  name="email"
                   placeholder="Enter Your Email"
                   className="input input-bordered"
                   required
@@ -117,6 +118,7 @@ const LoginSm = () => {
                 </label>
                 <input
                   type="password"
+                  name="password"
                   placeholder="Enter Your Password"
                   className="input input-bordered"
                   required

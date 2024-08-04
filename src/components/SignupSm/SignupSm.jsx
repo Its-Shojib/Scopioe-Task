@@ -1,7 +1,61 @@
 import img from "../../assets/signup-sm.png";
 import logo from "../../assets/logo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import toast from "react-hot-toast";
+import { updateProfile } from "firebase/auth";
+import auth from "../../Firebase/firebase.config";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
 const SignupSm = () => {
+
+  const { signUpUser } = useContext(AuthContext);
+  const navigate = useNavigate();
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const name = e.target.name.value;
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    const retypePass = e.target.retypePass.value;
+    const check = e.target.check.value;
+    console.log(e.target.check.value);
+
+    if (check == false) {
+      toast.error("Please agree to Terms and Conditions");
+      return;
+    }
+
+    console.log(name, email, password);
+    // password match condition
+    if (password !== retypePass) {
+      toast.error("Passwords do not match. Please try again.");
+      return;
+    }
+    // user data info
+    signUpUser(email, password)
+      .then((res) => {
+        console.log(res.user);
+
+        // update profile
+        updateProfile(auth.currentUser, {
+          displayName: name,
+        })
+          .then((res) => {
+            console.log(res);
+            console.log("updated");
+            toast.success("You Have Sign Up Successfully");
+            navigate("/");
+          })
+          .catch((error) => {
+            toast.error(error.message);
+            console.log(error);
+          });
+      })
+      .catch((error) => {
+        toast.error(error.message);
+      });
+  };
   return (
     <>
       <div
@@ -30,7 +84,7 @@ const SignupSm = () => {
             </h1>
           </div>
           {/*Sign Up Form Start*/}
-          <form className="space-y-2 bg-white px-5 py-8 rounded-t-[36px]">
+          <form onSubmit={handleSubmit} className="space-y-2 bg-white px-5 py-8 rounded-t-[36px]">
             <h1 className="text-center text-3xl text-[#1A2531] font-semibold pt-5 pb-5">
               Sign In
             </h1>
@@ -39,7 +93,8 @@ const SignupSm = () => {
                 <span className="font-semibold text-base ">Name</span>
               </label>
               <input
-                type="email"
+                type="text"
+                name="name"
                 placeholder="@Username"
                 className="input input-bordered"
                 required
@@ -51,6 +106,7 @@ const SignupSm = () => {
               </label>
               <input
                 type="email"
+                name="email"
                 placeholder="Enter Your Email"
                 className="input input-bordered"
                 required
@@ -62,6 +118,7 @@ const SignupSm = () => {
               </label>
               <input
                 type="password"
+                name="password"
                 placeholder="Enter Your Password"
                 className="input input-bordered"
                 required
@@ -77,6 +134,7 @@ const SignupSm = () => {
                 type="password"
                 placeholder="Re-Type Password"
                 className="input input-bordered"
+                name="retypePass"
                 required
               />
             </div>
