@@ -28,6 +28,13 @@ const SignUp = () => {
     const email = e.target.email.value;
     const password = e.target.password.value;
     const retypePass = e.target.retypePass.value;
+    const check = e.target.check.value;
+    console.log(e.target.check.value);
+
+    if(check == false){
+      toast.error("Please agree to Terms and Conditions");
+      return;
+    }
 
     console.log(name, email, password);
     // password match condition
@@ -72,10 +79,10 @@ const SignUp = () => {
             <h4 className="text-[#152A16] text-2xl font-semibold">
               Sign In To Your Account
             </h4>
-            <p className="text-[#5C635A] text-base font-normal mb-5 mt-3 text-justify">
-              elcome Back! By click the sign up button, you are agree to
-              Zenitood Terms and Service and acknlowledge the
-              <span className="text-[#4285F3] underline text-base font-normal">
+            <p className="text-[#5C635A] text-sm font-normal mb-5 mt-3 text-justify">
+              Welcome Back! By click the sign up button, you are agree to
+              Zenitood Terms and Service and acknlowledge the <br></br>
+              <span className="text-[#4285F3] underline text-base font-normal cursor-pointer">
                 {" "}
                 Privacy and Policy
               </span>
@@ -157,6 +164,7 @@ const SignUp = () => {
                   >
                     <input
                       type="checkbox"
+                      name='check'
                       className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-gray-900 checked:bg-[#4285F3] checked:border-none hover:before:opacity-10"
                       id="check"
                     />
@@ -188,7 +196,7 @@ const SignUp = () => {
               <div className=" text-center mt-10">
                 <button
                   type="submit"
-                  className="btn bg-[#4285F3] text-white text-base w-[300px] font-normal hover:text-[#4285F3]"
+                  className="bg-[#4285F3] p-3 rounded-md text-white text-base w-[300px] font-normal"
                 >
                   Sign up
                 </button>
@@ -196,8 +204,8 @@ const SignUp = () => {
               <div>
                 <p className="px-6 text-sm text-center text-black ">
                   Already have an account?{" "}
-                  <Link to="/login" className="hover:underline text-[#4285F3]">
-                    Login
+                  <Link to="/login" className="underline text-[#4285F3]">
+                    Log in
                   </Link>
                 </p>
               </div>

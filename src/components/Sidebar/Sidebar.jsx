@@ -1,6 +1,10 @@
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png";
-import { CiSettings } from "react-icons/ci";
+import { BiCategoryAlt } from "react-icons/bi";
+import { LuUsers2 } from "react-icons/lu";
+import { CiSearch, CiSettings, CiSquareInfo } from "react-icons/ci";
+import { IoNewspaperOutline } from "react-icons/io5";
+import { FaRegHeart } from "react-icons/fa";
 const Sidebar = () => {
   return (
     <aside
@@ -12,83 +16,73 @@ const Sidebar = () => {
         <img src={logo} alt="" />
       </div>
       <div className="h-full px-3 pb-4 overflow-y-auto bg-white dark:bg-gray-800">
-        <ul className="space-y-2 font-medium">
-          <li className="">
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              `flex items-center gap-3 pl-4 text-[#5c635a] py-3 ${
-                isActive ? "bg-[#D4E9FF]" : "" }` }>
-            <CiSettings /> Settings
-          </NavLink>
+        <ul className=" ">
+          {
+            <>
+
+              <li>
+                <NavLink to="/" className={({ isActive }) =>
+                  isActive ? " text-[#152A16] bg-[#D4E9FF]  font-medium  border-l-4 border-[#102C4A] hover:bg-[#4797ec] hover:border-l-[6px]  hover:text-white text-[15px]  flex items-center pl-[25px] gap-[12px] h-[46px]" :
+                    "font-normal hover:bg-[#4797ec] hover:border-l-[6px] hover:border-[#102C4A] hover:text-white   text-[#5C635A]     text-[15px] flex items-center pl-[25px] gap-[12px] h-[46px]"}>
+
+                  <BiCategoryAlt className=" w-[18px] h-[18px]" />
+                  Home
+
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink to="/new_listings"
+                  className={({ isActive }) =>
+                    isActive ? " text-[#152A16] bg-[#D4E9FF]  font-medium  border-l-4 border-[#102C4A] hover:bg-[#4797ec] hover:border-l-[6px]  hover:text-white text-[15px]  flex items-center pl-[25px] gap-[12px] h-[46px]" :
+                      "font-normal hover:bg-[#4797ec] hover:border-l-[6px] hover:border-[#102C4A] hover:text-white   text-[#5C635A]     text-[15px] flex items-center pl-[25px] gap-[12px] h-[46px]"}>
+                  <LuUsers2 className=" w-[18px] h-[18px]" />
+                  New Listing</NavLink>
+              </li>
+              <li>
+                <NavLink to="/search"
+                  className={({ isActive }) =>
+                    isActive ? " text-[#152A16] bg-[#D4E9FF]  font-medium  border-l-4 border-[#102C4A] hover:bg-[#4797ec] hover:border-l-[6px]  hover:text-white text-[15px]  flex items-center pl-[25px] gap-[12px] h-[46px]" :
+                      "font-normal hover:bg-[#4797ec] hover:border-l-[6px] hover:border-[#102C4A] hover:text-white   text-[#5C635A]     text-[15px] flex items-center pl-[25px] gap-[12px] h-[46px]"}>
+                  <CiSearch className=" w-[18px] h-[18px]" />
+                  Search</NavLink>
+              </li>
+              <li>
+                <NavLink to="/about" className={({ isActive }) =>
+                  isActive ? " text-[#152A16] bg-[#D4E9FF]  font-medium  border-l-4 border-[#102C4A] hover:bg-[#4797ec] hover:border-l-[6px]  hover:text-white text-[15px]  flex items-center pl-[25px] gap-[12px] h-[46px]" :
+                    "font-normal hover:bg-[#4797ec] hover:border-l-[6px] hover:border-[#102C4A] hover:text-white   text-[#5C635A]     text-[15px] flex items-center pl-[25px] gap-[12px] h-[46px]"}>
+                  <IoNewspaperOutline className=" w-[18px] h-[18px]" />
+                  About</NavLink>
+              </li>
+              <li>
+                <NavLink to="/favorites" className={({ isActive }) =>
+                  isActive ? " text-[#152A16] bg-[#D4E9FF]  font-medium  border-l-4 border-[#102C4A] hover:bg-[#4797ec] hover:border-l-[6px]  hover:text-white text-[15px]  flex items-center pl-[25px] gap-[12px] h-[46px]" :
+                    "font-normal hover:bg-[#4797ec] hover:border-l-[6px] hover:border-[#102C4A] hover:text-white   text-[#5C635A]     text-[15px] flex items-center pl-[25px] gap-[12px] h-[46px]"}>
+                  <FaRegHeart className=" w-[18px] h-[18px]" />
+                  Favorites</NavLink>
+              </li>
+
+
+            </>
+
+          }
+
+          <div className="divider my-[25px] divide-gray-500 w-[210px] mx-auto"></div>
+          <li>
+            <NavLink to="/help_center" className={({ isActive }) =>
+              isActive ? " text-[#152A16] bg-[#D4E9FF]  font-medium  border-l-4 border-[#102C4A] hover:bg-[#4797ec] hover:border-l-[6px]  hover:text-white text-[15px]  flex items-center pl-[25px] gap-[12px] h-[46px]" :
+                "font-normal hover:bg-[#4797ec] hover:border-l-[6px] hover:border-[#102C4A] hover:text-white   text-[#5C635A]     text-[15px] flex items-center pl-[25px] gap-[12px] h-[46px]"}>
+              <CiSquareInfo className=" w-[18px] h-[18px]" />
+              Help Center</NavLink>
           </li>
           <li>
-            <a
-              href="#"
-              className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-[#D4E9FF] dark:hover:bg-gray-700 group"
-            >
-              <img src="https://i.ibb.co/jyQKKJD/new.png" alt="" />
-              <span className="flex-1 ms-3 whitespace-nowrap text-[#5C635A] text-base font-normal">
-                New Listing
-              </span>
-            </a>
+            <NavLink to="/settings" className={({ isActive }) =>
+              isActive ? " text-[#152A16] bg-[#D4E9FF]  font-medium  border-l-4 border-[#102C4A] hover:bg-[#4797ec] hover:border-l-[6px]  hover:text-white text-[15px]  flex items-center pl-[25px] gap-[12px] h-[46px]" :
+                "font-normal hover:bg-[#4797ec] hover:border-l-[6px] hover:border-[#102C4A] hover:text-white   text-[#5C635A]     text-[15px] flex items-center pl-[25px] gap-[12px] h-[46px]"}>
+              <CiSettings className=" w-[18px] h-[18px]" />
+              Settings</NavLink>
           </li>
-          <li>
-            <a
-              href="#"
-              className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-[#D4E9FF] dark:hover:bg-gray-700 group"
-            >
-              <img src="https://i.ibb.co/pWGfgXP/Search.png" alt="" />
-              <span className="flex-1 ms-3 whitespace-nowrap text-[#5C635A] text-base font-normal">
-                Search
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-[#D4E9FF] dark:hover:bg-gray-700 group"
-            >
-              <img src="https://i.ibb.co/7K37Cv3/Paper.png" alt="" />
-              <span className="flex-1 ms-3 whitespace-nowrap text-[#5C635A] text-base font-normal">
-                About
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-[#D4E9FF] dark:hover:bg-gray-700 group mb-5"
-            >
-              <img src="https://i.ibb.co/48DMrm8/Vector.png" alt="" />
-              <span className="flex-1 ms-3 whitespace-nowrap text-[#5C635A] text-base font-normal">
-                Favorites
-              </span>
-            </a>
-          </li>
-          <hr className="my-10 py-[1px] h-0.5 border-t-0 bg-[#E7E7E7] dark:bg-white/10" />
-          <li>
-            <a
-              href="#"
-              className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-[#D4E9FF] dark:hover:bg-gray-700 group mt-5"
-            >
-              <img src="https://i.ibb.co/3zKYZmv/info.png" alt="" />
-              <span className="flex-1 ms-3 whitespace-nowrap text-[#5C635A] text-base font-normal">
-                Help Center
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-[#D4E9FF] dark:hover:bg-gray-700 group"
-            >
-              <img src="https://i.ibb.co/b53KmBg/Setting.png" alt="" />
-              <span className="flex-1 ms-3 whitespace-nowrap text-[#5C635A] text-base font-normal">
-                Setting
-              </span>
-            </a>
-          </li>
+
         </ul>
       </div>
     </aside>

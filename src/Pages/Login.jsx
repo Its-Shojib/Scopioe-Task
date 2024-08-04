@@ -81,7 +81,7 @@ const Login = () => {
               </p>
 
               {/* Login In social Button Start*/}
-              <div className="flex justify-between items-center">
+              <div className="flex justify-around items-center">
                 <div
                   onClick={handleGoogleSignIn}
                   className="flex justify-between items-center bg-gradient-to-r from-[#E4E4E4] to-[#FFFFFF] space-x-2 border my-3 px-5 lg:px-10 py-3 border-gray-300 border-rounded cursor-pointer shadow-xl rounded-lg"
