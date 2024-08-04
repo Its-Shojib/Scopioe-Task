@@ -20,7 +20,7 @@ const Banner = () => {
               className="grow"
               placeholder="ZIP code or city name"
             />
-            <span className="badge badge-info bg-[#156BCA] rounded-lg  p-[18px] text-white px-10 md:-mr-[11px]">
+            <span className="badge cursor-pointer badge-info bg-[#156BCA] rounded-lg  p-[18px] text-white px-10 md:-mr-[11px]">
               Go
             </span>
           </label>
@@ -38,7 +38,7 @@ const Banner = () => {
             className="grow"
             placeholder="ZIP code or city name"
           />
-          <span className="badge badge-info bg-[#156BCA] rounded-lg  p-[18px] text-white px-10 md:-mr-[11px]">
+          <span className="badge cursor-pointer badge-info bg-[#156BCA] rounded-lg  p-[18px] text-white px-10 md:-mr-[11px]">
             Go
           </span>
         </label>
